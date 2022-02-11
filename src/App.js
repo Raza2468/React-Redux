@@ -1,10 +1,26 @@
+import { Header } from './Components/Header';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { ProductListing } from './Components/ProductsListing';
+import { ProductDetail } from './Components/ProductDetail';
 
-import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Redux</h1>
+    <div>
+      <Router>
+        <Header />
+        {/* <Switch>
+          <Route path='/' exact component={ProductListing} />
+          <Route Path='/product/:productId' exact component={ProductDetail} />
+          <Route>404 Page Not Found!</Route>
+        </Switch> */}
+      </Router>
     </div>
   );
 }

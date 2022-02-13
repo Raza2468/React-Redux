@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 
-
-export const ProductDetail = () => {
+export  const PageNotFound = () => {
     return (
         <div>
             <br />
@@ -9,9 +8,8 @@ export const ProductDetail = () => {
             <br />
             <br />
             <br />
-
-            <h1>ProductDetail</h1>
-
-        </div>
+            <h1>PAge Not PageNotFound</h1>
+          </div>
     )
+
 }

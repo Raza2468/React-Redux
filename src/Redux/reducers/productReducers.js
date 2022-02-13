@@ -1,22 +1,16 @@
 import { actionTypes } from "../contants/action_type"
 
 const inatialState = {
-    Product :[
-        {
-            id: 1,
-            Name: "Raza",
-            Catagari: "Good",
-        },
-    ],
+    Product: [],
 }
 
 // { type, payload } DeIstracaring
 
-export const productReducer = (state=inatialState, { type, payload }) => {
+export const productReducer = (state = inatialState, { type, payload }) => {
 
     switch (type) {
         case actionTypes.SET_PRODUCTS:
-            return state
+            return { ...state, Product: payload }
 
         default:
             return state
